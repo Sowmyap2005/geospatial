@@ -1,0 +1,3267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ea20af0618bb586141cb0ff9ef8ce62 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8ea20af0618bb586141cb0ff9ef8ce62" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8ea20af0618bb586141cb0ff9ef8ce62 = L.map(
+                "map_8ea20af0618bb586141cb0ff9ef8ce62",
+                {
+                    center: [14.798572503915155, 76.90000041530773],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9ac209c1a701940cf7fea6df03c018df = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9ac209c1a701940cf7fea6df03c018df.addTo(map_8ea20af0618bb586141cb0ff9ef8ce62);
+        
+    
+            var marker_cluster_c2ceb85113052080519c210845fa8e20 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_00b31b28d3983472da3efd7026c6cfdd = L.marker(
+                [13.798572435054592, 76.05000023517498],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_9c69fab102b6ef2526929ade5db8a01b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d65ea0a57b17ecb072915ea5fb9097d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1df75cd4ff3a870e720dd35a16f6c068 = $(`<div id="html_1df75cd4ff3a870e720dd35a16f6c068" style="width: 100.0%; height: 100.0%;">Cell ID: 0<br>Predicted: Chromite<br>True: Chromite</div>`)[0];
+                popup_7d65ea0a57b17ecb072915ea5fb9097d.setContent(html_1df75cd4ff3a870e720dd35a16f6c068);
+            
+        
+
+        marker_00b31b28d3983472da3efd7026c6cfdd.bindPopup(popup_7d65ea0a57b17ecb072915ea5fb9097d)
+        ;
+
+        
+    
+    
+                marker_00b31b28d3983472da3efd7026c6cfdd.setIcon(icon_9c69fab102b6ef2526929ade5db8a01b);
+            
+    
+            var marker_123b1bc29f8416233c4d42a9c9731adc = L.marker(
+                [13.898572442846604, 76.05000023462527],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_5816461110e8d6d53321f53caa60b731 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd5fb234f28ade9a6ccc238b0112355a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8718ce4f019bb6ab5c584512a872412 = $(`<div id="html_f8718ce4f019bb6ab5c584512a872412" style="width: 100.0%; height: 100.0%;">Cell ID: 1<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_bd5fb234f28ade9a6ccc238b0112355a.setContent(html_f8718ce4f019bb6ab5c584512a872412);
+            
+        
+
+        marker_123b1bc29f8416233c4d42a9c9731adc.bindPopup(popup_bd5fb234f28ade9a6ccc238b0112355a)
+        ;
+
+        
+    
+    
+                marker_123b1bc29f8416233c4d42a9c9731adc.setIcon(icon_5816461110e8d6d53321f53caa60b731);
+            
+    
+            var marker_213a7fb652ae07809dd24f3627c93b48 = L.marker(
+                [14.798572508952896, 76.05000022951472],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_7f5100d2a82823826405734ec90f4f4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ac7166663fee37e358f1c56f65c13ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c25c1bae29cd1433348dd26496577432 = $(`<div id="html_c25c1bae29cd1433348dd26496577432" style="width: 100.0%; height: 100.0%;">Cell ID: 10<br>Predicted: Copper<br>True: Copper</div>`)[0];
+                popup_2ac7166663fee37e358f1c56f65c13ea.setContent(html_c25c1bae29cd1433348dd26496577432);
+            
+        
+
+        marker_213a7fb652ae07809dd24f3627c93b48.bindPopup(popup_2ac7166663fee37e358f1c56f65c13ea)
+        ;
+
+        
+    
+    
+                marker_213a7fb652ae07809dd24f3627c93b48.setIcon(icon_7f5100d2a82823826405734ec90f4f4d);
+            
+    
+            var marker_0c49341eca6dba2ad4123f196d2ab533 = L.marker(
+                [14.298572472877495, 76.15000025452719],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_c51255fcdc1522fff28be3d89df5c337 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c750d291e653660333ec2a43901c56f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62438db4b2630e46d9f40780709c3f92 = $(`<div id="html_62438db4b2630e46d9f40780709c3f92" style="width: 100.0%; height: 100.0%;">Cell ID: 26<br>Predicted: Base Metal<br>True: Base Metal</div>`)[0];
+                popup_4c750d291e653660333ec2a43901c56f.setContent(html_62438db4b2630e46d9f40780709c3f92);
+            
+        
+
+        marker_0c49341eca6dba2ad4123f196d2ab533.bindPopup(popup_4c750d291e653660333ec2a43901c56f)
+        ;
+
+        
+    
+    
+                marker_0c49341eca6dba2ad4123f196d2ab533.setIcon(icon_c51255fcdc1522fff28be3d89df5c337);
+            
+    
+            var marker_866036bdadfb3c03d74c792e848bedd5 = L.marker(
+                [14.398572480222775, 76.1500002539052],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_a09b4132518397a234c38df78972715c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fba56199525ce87053f74a2935e897a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91ddbcc5a28898d9b58f80569df5f5b2 = $(`<div id="html_91ddbcc5a28898d9b58f80569df5f5b2" style="width: 100.0%; height: 100.0%;">Cell ID: 27<br>Predicted: Manganese<br>True: Manganese</div>`)[0];
+                popup_4fba56199525ce87053f74a2935e897a.setContent(html_91ddbcc5a28898d9b58f80569df5f5b2);
+            
+        
+
+        marker_866036bdadfb3c03d74c792e848bedd5.bindPopup(popup_4fba56199525ce87053f74a2935e897a)
+        ;
+
+        
+    
+    
+                marker_866036bdadfb3c03d74c792e848bedd5.setIcon(icon_a09b4132518397a234c38df78972715c);
+            
+    
+            var marker_92cfefe2b10033d6e6cf65b88ac03c4a = L.marker(
+                [14.798572508689505, 76.15000025137785],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_c87bba2f3b78938f4ef8a950247fee4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8374f09adf4be0dc8f5d4e948c1411b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7038773dc8e66b919526107d498f29f7 = $(`<div id="html_7038773dc8e66b919526107d498f29f7" style="width: 100.0%; height: 100.0%;">Cell ID: 31<br>Predicted: Kimberlite<br>True: Kimberlite</div>`)[0];
+                popup_8374f09adf4be0dc8f5d4e948c1411b1.setContent(html_7038773dc8e66b919526107d498f29f7);
+            
+        
+
+        marker_92cfefe2b10033d6e6cf65b88ac03c4a.bindPopup(popup_8374f09adf4be0dc8f5d4e948c1411b1)
+        ;
+
+        
+    
+    
+                marker_92cfefe2b10033d6e6cf65b88ac03c4a.setIcon(icon_c87bba2f3b78938f4ef8a950247fee4b);
+            
+    
+            var marker_07a93b06960cf8af05b7df14235c48bd = L.marker(
+                [15.298572542169172, 76.15000024813044],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_0b1ed771aade9fa53aa1032b416db732 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f11156e6098e6990e39917cbdee49ad6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc6bc30631eacb5dfa28005b14a4f8b7 = $(`<div id="html_cc6bc30631eacb5dfa28005b14a4f8b7" style="width: 100.0%; height: 100.0%;">Cell ID: 36<br>Predicted: Phosphate,Rare Earth Elements<br>True: Phosphate,Rare Earth Elements</div>`)[0];
+                popup_f11156e6098e6990e39917cbdee49ad6.setContent(html_cc6bc30631eacb5dfa28005b14a4f8b7);
+            
+        
+
+        marker_07a93b06960cf8af05b7df14235c48bd.bindPopup(popup_f11156e6098e6990e39917cbdee49ad6)
+        ;
+
+        
+    
+    
+                marker_07a93b06960cf8af05b7df14235c48bd.setIcon(icon_0b1ed771aade9fa53aa1032b416db732);
+            
+    
+            var marker_c54822831f663e45418294a364fd8988 = L.marker(
+                [13.798572434544097, 76.25000027998122],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_76325182e57cc23cd53ecf2260e82fe2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b04bf58c7006c50666d56cc618bf874 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01874ade2eaa2304347a2d14d6cab8a2 = $(`<div id="html_01874ade2eaa2304347a2d14d6cab8a2" style="width: 100.0%; height: 100.0%;">Cell ID: 42<br>Predicted: Gold,Diamond<br>True: Gold,Diamond</div>`)[0];
+                popup_9b04bf58c7006c50666d56cc618bf874.setContent(html_01874ade2eaa2304347a2d14d6cab8a2);
+            
+        
+
+        marker_c54822831f663e45418294a364fd8988.bindPopup(popup_9b04bf58c7006c50666d56cc618bf874)
+        ;
+
+        
+    
+    
+                marker_c54822831f663e45418294a364fd8988.setIcon(icon_76325182e57cc23cd53ecf2260e82fe2);
+            
+    
+            var marker_164e0e746bcdf6bd8fa483d7ffe969e5 = L.marker(
+                [13.998572450032391, 76.25000027866795],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_1bc2683c4aa803027ead80af3110802c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3a3897f0080d4385fb4e1fba1e84fe1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1838984c803e1f496b855e77168719b = $(`<div id="html_f1838984c803e1f496b855e77168719b" style="width: 100.0%; height: 100.0%;">Cell ID: 44<br>Predicted: Molybdenum<br>True: Molybdenum</div>`)[0];
+                popup_b3a3897f0080d4385fb4e1fba1e84fe1.setContent(html_f1838984c803e1f496b855e77168719b);
+            
+        
+
+        marker_164e0e746bcdf6bd8fa483d7ffe969e5.bindPopup(popup_b3a3897f0080d4385fb4e1fba1e84fe1)
+        ;
+
+        
+    
+    
+                marker_164e0e746bcdf6bd8fa483d7ffe969e5.setIcon(icon_1bc2683c4aa803027ead80af3110802c);
+            
+    
+            var marker_554ce45b84ae337f1a323af971d049cc = L.marker(
+                [14.09857245764432, 76.25000027800482],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_7dae64f40d618dce237960292afba7c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71ea0486b552d056b369a89cfd4b90c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f20bcf87406b87e3641067b5af14a50 = $(`<div id="html_4f20bcf87406b87e3641067b5af14a50" style="width: 100.0%; height: 100.0%;">Cell ID: 45<br>Predicted: Manganese<br>True: Manganese</div>`)[0];
+                popup_71ea0486b552d056b369a89cfd4b90c5.setContent(html_4f20bcf87406b87e3641067b5af14a50);
+            
+        
+
+        marker_554ce45b84ae337f1a323af971d049cc.bindPopup(popup_71ea0486b552d056b369a89cfd4b90c5)
+        ;
+
+        
+    
+    
+                marker_554ce45b84ae337f1a323af971d049cc.setIcon(icon_7dae64f40d618dce237960292afba7c9);
+            
+    
+            var marker_1ce89bc678d314c3cba47661a09b8164 = L.marker(
+                [14.198572465167292, 76.25000027733735],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_8a80768764ac7a1b673537cab5a13815 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3447d0add5b6101e929bb00e2751261c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e498cc2f78fd7bef618a0f6909c6abf1 = $(`<div id="html_e498cc2f78fd7bef618a0f6909c6abf1" style="width: 100.0%; height: 100.0%;">Cell ID: 46<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_3447d0add5b6101e929bb00e2751261c.setContent(html_e498cc2f78fd7bef618a0f6909c6abf1);
+            
+        
+
+        marker_1ce89bc678d314c3cba47661a09b8164.bindPopup(popup_3447d0add5b6101e929bb00e2751261c)
+        ;
+
+        
+    
+    
+                marker_1ce89bc678d314c3cba47661a09b8164.setIcon(icon_8a80768764ac7a1b673537cab5a13815);
+            
+    
+            var marker_fbcd1f485ceb02585706051192d9a9c5 = L.marker(
+                [14.598572494357123, 76.25000027462443],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_c726e6e532339c9042e92aec0e869cef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc7ad019352023eb4a1c1eadfe2fc7e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3672133a9a0f5e041443782c400104ad = $(`<div id="html_3672133a9a0f5e041443782c400104ad" style="width: 100.0%; height: 100.0%;">Cell ID: 50<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_cc7ad019352023eb4a1c1eadfe2fc7e7.setContent(html_3672133a9a0f5e041443782c400104ad);
+            
+        
+
+        marker_fbcd1f485ceb02585706051192d9a9c5.bindPopup(popup_cc7ad019352023eb4a1c1eadfe2fc7e7)
+        ;
+
+        
+    
+    
+                marker_fbcd1f485ceb02585706051192d9a9c5.setIcon(icon_c726e6e532339c9042e92aec0e869cef);
+            
+    
+            var marker_30c4106b6e0c8ed24d5c5a7e7e13f036 = L.marker(
+                [15.0985725287684, 76.25000027113697],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_b2d70c76bcd3995819aa613c40b8f58f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9ff81e79c3e5b6d4518ffe7c42fde49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e78f531ecf647d89129cb44cfcba883 = $(`<div id="html_8e78f531ecf647d89129cb44cfcba883" style="width: 100.0%; height: 100.0%;">Cell ID: 55<br>Predicted: Corundum<br>True: Corundum</div>`)[0];
+                popup_a9ff81e79c3e5b6d4518ffe7c42fde49.setContent(html_8e78f531ecf647d89129cb44cfcba883);
+            
+        
+
+        marker_30c4106b6e0c8ed24d5c5a7e7e13f036.bindPopup(popup_a9ff81e79c3e5b6d4518ffe7c42fde49)
+        ;
+
+        
+    
+    
+                marker_30c4106b6e0c8ed24d5c5a7e7e13f036.setIcon(icon_b2d70c76bcd3995819aa613c40b8f58f);
+            
+    
+            var marker_6220017d5b4db64cb81a14ea4b3751e6 = L.marker(
+                [15.198572535367683, 76.25000027042674],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_d8a9835cc62624b8f1f6c06a67d1f3e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dc316e43639540c0faff36b004099fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e1ac1a9805e349ae05bac93ce4ac4ad = $(`<div id="html_8e1ac1a9805e349ae05bac93ce4ac4ad" style="width: 100.0%; height: 100.0%;">Cell ID: 56<br>Predicted: Corundum<br>True: Corundum</div>`)[0];
+                popup_0dc316e43639540c0faff36b004099fe.setContent(html_8e1ac1a9805e349ae05bac93ce4ac4ad);
+            
+        
+
+        marker_6220017d5b4db64cb81a14ea4b3751e6.bindPopup(popup_0dc316e43639540c0faff36b004099fe)
+        ;
+
+        
+    
+    
+                marker_6220017d5b4db64cb81a14ea4b3751e6.setIcon(icon_d8a9835cc62624b8f1f6c06a67d1f3e3);
+            
+    
+            var marker_a87d86e0c56210c0763e47ae43cee1c8 = L.marker(
+                [13.898572442041266, 76.3500003016796],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_6342ba016eb898666e63b467965f5ea4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e173e9cf99c605468c4ea2e6610cce11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad18ecf0858672de734f769a1b6a7027 = $(`<div id="html_ad18ecf0858672de734f769a1b6a7027" style="width: 100.0%; height: 100.0%;">Cell ID: 64<br>Predicted: Base Metal<br>True: Base Metal</div>`)[0];
+                popup_e173e9cf99c605468c4ea2e6610cce11.setContent(html_ad18ecf0858672de734f769a1b6a7027);
+            
+        
+
+        marker_a87d86e0c56210c0763e47ae43cee1c8.bindPopup(popup_e173e9cf99c605468c4ea2e6610cce11)
+        ;
+
+        
+    
+    
+                marker_a87d86e0c56210c0763e47ae43cee1c8.setIcon(icon_6342ba016eb898666e63b467965f5ea4);
+            
+    
+            var marker_d3bda4c1a4cb0dea03f67a300955acd5 = L.marker(
+                [13.998572449739285, 76.35000030096805],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_93f61f58c97d22e030d0929616ed6dde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f024a655c7964d42285786d8d64b14d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9284437d502f3a707537a3e576a991ce = $(`<div id="html_9284437d502f3a707537a3e576a991ce" style="width: 100.0%; height: 100.0%;">Cell ID: 65<br>Predicted: Manganese<br>True: Manganese</div>`)[0];
+                popup_f024a655c7964d42285786d8d64b14d3.setContent(html_9284437d502f3a707537a3e576a991ce);
+            
+        
+
+        marker_d3bda4c1a4cb0dea03f67a300955acd5.bindPopup(popup_f024a655c7964d42285786d8d64b14d3)
+        ;
+
+        
+    
+    
+                marker_d3bda4c1a4cb0dea03f67a300955acd5.setIcon(icon_93f61f58c97d22e030d0929616ed6dde);
+            
+    
+            var marker_55d17f888c0fb3059d866408ad066947 = L.marker(
+                [14.098572457348954, 76.35000030025182],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_194c186d16e0f33b21ca1370d7ee030a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_214159f6b41aec7fa1eed98abf8c7523 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d03dac8712ce17f4c605c73eebb810d9 = $(`<div id="html_d03dac8712ce17f4c605c73eebb810d9" style="width: 100.0%; height: 100.0%;">Cell ID: 66<br>Predicted: Sulphides<br>True: Sulphides</div>`)[0];
+                popup_214159f6b41aec7fa1eed98abf8c7523.setContent(html_d03dac8712ce17f4c605c73eebb810d9);
+            
+        
+
+        marker_55d17f888c0fb3059d866408ad066947.bindPopup(popup_214159f6b41aec7fa1eed98abf8c7523)
+        ;
+
+        
+    
+    
+                marker_55d17f888c0fb3059d866408ad066947.setIcon(icon_194c186d16e0f33b21ca1370d7ee030a);
+            
+    
+            var marker_0d612e672d2faab1fa1936876edbaed2 = L.marker(
+                [14.198572464869653, 76.35000029953092],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_1a06c2aac42617402c0b6958833eb4b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17b7187b7acbadb3b03dd3bdd21fc115 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dc2f308741399669389a4a94d859c7c = $(`<div id="html_7dc2f308741399669389a4a94d859c7c" style="width: 100.0%; height: 100.0%;">Cell ID: 67<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_17b7187b7acbadb3b03dd3bdd21fc115.setContent(html_7dc2f308741399669389a4a94d859c7c);
+            
+        
+
+        marker_0d612e672d2faab1fa1936876edbaed2.bindPopup(popup_17b7187b7acbadb3b03dd3bdd21fc115)
+        ;
+
+        
+    
+    
+                marker_0d612e672d2faab1fa1936876edbaed2.setIcon(icon_1a06c2aac42617402c0b6958833eb4b3);
+            
+    
+            var marker_b3c09c240ddb6090710e435b12c3f829 = L.marker(
+                [14.298572472300762, 76.35000029880536],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_eeb8d31ed3394b9dcc5c55be652e8541 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82d1d499f5fc22e636ec14e1188740df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b247516378d3e2ae257ef7237bdb1785 = $(`<div id="html_b247516378d3e2ae257ef7237bdb1785" style="width: 100.0%; height: 100.0%;">Cell ID: 68<br>Predicted: Base Metal<br>True: Base Metal</div>`)[0];
+                popup_82d1d499f5fc22e636ec14e1188740df.setContent(html_b247516378d3e2ae257ef7237bdb1785);
+            
+        
+
+        marker_b3c09c240ddb6090710e435b12c3f829.bindPopup(popup_82d1d499f5fc22e636ec14e1188740df)
+        ;
+
+        
+    
+    
+                marker_b3c09c240ddb6090710e435b12c3f829.setIcon(icon_eeb8d31ed3394b9dcc5c55be652e8541);
+            
+    
+            var marker_bb0b3bf482baf4b0387aa86d8b7ea53d = L.marker(
+                [14.398572479641654, 76.35000029807516],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_e1b04fdbe3d74c6c40100429ff5b9dcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db534f1ab4b6a94e4d03a592f6fd7179 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94b14937857d67cb2f3ea9ef81e2032b = $(`<div id="html_94b14937857d67cb2f3ea9ef81e2032b" style="width: 100.0%; height: 100.0%;">Cell ID: 69<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_db534f1ab4b6a94e4d03a592f6fd7179.setContent(html_94b14937857d67cb2f3ea9ef81e2032b);
+            
+        
+
+        marker_bb0b3bf482baf4b0387aa86d8b7ea53d.bindPopup(popup_db534f1ab4b6a94e4d03a592f6fd7179)
+        ;
+
+        
+    
+    
+                marker_bb0b3bf482baf4b0387aa86d8b7ea53d.setIcon(icon_e1b04fdbe3d74c6c40100429ff5b9dcb);
+            
+    
+            var marker_e6ea0c90a227867da5b22d95cc37668a = L.marker(
+                [14.498572486891732, 76.3500002973403],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_08c132bb845ffb5ca36fc327c2c056e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_775b64b11709a24636ba96b4aaa832bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87f59c0aa421af9261d67ced5510e36f = $(`<div id="html_87f59c0aa421af9261d67ced5510e36f" style="width: 100.0%; height: 100.0%;">Cell ID: 70<br>Predicted: Manganese<br>True: Manganese</div>`)[0];
+                popup_775b64b11709a24636ba96b4aaa832bb.setContent(html_87f59c0aa421af9261d67ced5510e36f);
+            
+        
+
+        marker_e6ea0c90a227867da5b22d95cc37668a.bindPopup(popup_775b64b11709a24636ba96b4aaa832bb)
+        ;
+
+        
+    
+    
+                marker_e6ea0c90a227867da5b22d95cc37668a.setIcon(icon_08c132bb845ffb5ca36fc327c2c056e6);
+            
+    
+            var marker_926795238e164c5ded71f72a5d53fb7a = L.marker(
+                [15.098572528450179, 76.35000029283418],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_75458ae60f3f5ac5badc14fb4172390a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1b0594ad27a5f6451ff5fd4887985b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caf63ac30bb020aca4bd9613e28dd00b = $(`<div id="html_caf63ac30bb020aca4bd9613e28dd00b" style="width: 100.0%; height: 100.0%;">Cell ID: 76<br>Predicted: Corundum<br>True: Corundum</div>`)[0];
+                popup_c1b0594ad27a5f6451ff5fd4887985b8.setContent(html_caf63ac30bb020aca4bd9613e28dd00b);
+            
+        
+
+        marker_926795238e164c5ded71f72a5d53fb7a.bindPopup(popup_c1b0594ad27a5f6451ff5fd4887985b8)
+        ;
+
+        
+    
+    
+                marker_926795238e164c5ded71f72a5d53fb7a.setIcon(icon_75458ae60f3f5ac5badc14fb4172390a);
+            
+    
+            var marker_3a6334c848bf5cf88f4235ffb8a4d16b = L.marker(
+                [13.798572433944711, 76.45000032479325],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_a119a36310e8eec0f1fc6218024a536d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_070c096e265ac084c47f0442b6375ecd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0c76231a23459f89fb0901cfcf181f6 = $(`<div id="html_b0c76231a23459f89fb0901cfcf181f6" style="width: 100.0%; height: 100.0%;">Cell ID: 84<br>Predicted: Manganese<br>True: Manganese</div>`)[0];
+                popup_070c096e265ac084c47f0442b6375ecd.setContent(html_b0c76231a23459f89fb0901cfcf181f6);
+            
+        
+
+        marker_3a6334c848bf5cf88f4235ffb8a4d16b.bindPopup(popup_070c096e265ac084c47f0442b6375ecd)
+        ;
+
+        
+    
+    
+                marker_3a6334c848bf5cf88f4235ffb8a4d16b.setIcon(icon_a119a36310e8eec0f1fc6218024a536d);
+            
+    
+            var marker_ee966e1d055e72c24a9fb7df64d05652 = L.marker(
+                [13.89857244172802, 76.45000032403398],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_2f2c47e8c6eb09b589ec59cf965521b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14dc2e3d1e9f438ab8364695fdc6cd3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_835a33e0bb8beaae6fb9c90185c50d99 = $(`<div id="html_835a33e0bb8beaae6fb9c90185c50d99" style="width: 100.0%; height: 100.0%;">Cell ID: 85<br>Predicted: Iron,Manganese<br>True: Iron,Manganese</div>`)[0];
+                popup_14dc2e3d1e9f438ab8364695fdc6cd3a.setContent(html_835a33e0bb8beaae6fb9c90185c50d99);
+            
+        
+
+        marker_ee966e1d055e72c24a9fb7df64d05652.bindPopup(popup_14dc2e3d1e9f438ab8364695fdc6cd3a)
+        ;
+
+        
+    
+    
+                marker_ee966e1d055e72c24a9fb7df64d05652.setIcon(icon_2f2c47e8c6eb09b589ec59cf965521b9);
+            
+    
+            var marker_e51cf190d115fa9b3625298c91dbf078 = L.marker(
+                [13.998572449423605, 76.45000032326969],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_6c55b333e5a4a27fac33f2221f2ffb70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5ed881cc346ec508c527fb25c1ef709 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e00c38cbf77c68987db86672ad22f65 = $(`<div id="html_5e00c38cbf77c68987db86672ad22f65" style="width: 100.0%; height: 100.0%;">Cell ID: 86<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_e5ed881cc346ec508c527fb25c1ef709.setContent(html_5e00c38cbf77c68987db86672ad22f65);
+            
+        
+
+        marker_e51cf190d115fa9b3625298c91dbf078.bindPopup(popup_e5ed881cc346ec508c527fb25c1ef709)
+        ;
+
+        
+    
+    
+                marker_e51cf190d115fa9b3625298c91dbf078.setIcon(icon_6c55b333e5a4a27fac33f2221f2ffb70);
+            
+    
+            var marker_4769b43f3c4d3a8d3ba57255bf5fc2cb = L.marker(
+                [14.098572457030823, 76.45000032250036],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_7533b9c6547b4ab8db53fe1d70a14601 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_664d67c66281f142e540bf544f7961c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5063ab276de3ee8d9c7744f3ea2d3eee = $(`<div id="html_5063ab276de3ee8d9c7744f3ea2d3eee" style="width: 100.0%; height: 100.0%;">Cell ID: 87<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_664d67c66281f142e540bf544f7961c0.setContent(html_5063ab276de3ee8d9c7744f3ea2d3eee);
+            
+        
+
+        marker_4769b43f3c4d3a8d3ba57255bf5fc2cb.bindPopup(popup_664d67c66281f142e540bf544f7961c0)
+        ;
+
+        
+    
+    
+                marker_4769b43f3c4d3a8d3ba57255bf5fc2cb.setIcon(icon_7533b9c6547b4ab8db53fe1d70a14601);
+            
+    
+            var marker_5ae8fc2a8c00ce13e5b3b1ce9e692b6e = L.marker(
+                [14.198572464549079, 76.45000032172602],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_92b1adb99ec68c613d1f094df3fc6a28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18e5b9367f55eb81d956e2cafb0024fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a42265d3a53e13dd38f242272cda200d = $(`<div id="html_a42265d3a53e13dd38f242272cda200d" style="width: 100.0%; height: 100.0%;">Cell ID: 88<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_18e5b9367f55eb81d956e2cafb0024fa.setContent(html_a42265d3a53e13dd38f242272cda200d);
+            
+        
+
+        marker_5ae8fc2a8c00ce13e5b3b1ce9e692b6e.bindPopup(popup_18e5b9367f55eb81d956e2cafb0024fa)
+        ;
+
+        
+    
+    
+                marker_5ae8fc2a8c00ce13e5b3b1ce9e692b6e.setIcon(icon_92b1adb99ec68c613d1f094df3fc6a28);
+            
+    
+            var marker_98d49e8718b084c75c2c1101b92b2d4f = L.marker(
+                [14.298572471977735, 76.45000032094667],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_13a0ad2ad0457b28e9443a84e31c35b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e36164de5cd66e2ad227ea2a6e50610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b24fa06526dc1df125ec5068d83e8c76 = $(`<div id="html_b24fa06526dc1df125ec5068d83e8c76" style="width: 100.0%; height: 100.0%;">Cell ID: 89<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_9e36164de5cd66e2ad227ea2a6e50610.setContent(html_b24fa06526dc1df125ec5068d83e8c76);
+            
+        
+
+        marker_98d49e8718b084c75c2c1101b92b2d4f.bindPopup(popup_9e36164de5cd66e2ad227ea2a6e50610)
+        ;
+
+        
+    
+    
+                marker_98d49e8718b084c75c2c1101b92b2d4f.setIcon(icon_13a0ad2ad0457b28e9443a84e31c35b5);
+            
+    
+            var marker_41bfb8d9195682a9dc0e9f494a945459 = L.marker(
+                [14.998572521417788, 76.4500003153519],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_a7c65dc09490d7b5081e47783fe0fb25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d4d1afb8cbf7814b8d1531850ec336e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_253da24a604f1640e56c12063d553045 = $(`<div id="html_253da24a604f1640e56c12063d553045" style="width: 100.0%; height: 100.0%;">Cell ID: 96<br>Predicted: Copper<br>True: Copper</div>`)[0];
+                popup_1d4d1afb8cbf7814b8d1531850ec336e.setContent(html_253da24a604f1640e56c12063d553045);
+            
+        
+
+        marker_41bfb8d9195682a9dc0e9f494a945459.bindPopup(popup_1d4d1afb8cbf7814b8d1531850ec336e)
+        ;
+
+        
+    
+    
+                marker_41bfb8d9195682a9dc0e9f494a945459.setIcon(icon_a7c65dc09490d7b5081e47783fe0fb25);
+            
+    
+            var marker_3da225db6a684f951b2d3fd6f31bd96b = L.marker(
+                [15.098572528107436, 76.45000031453284],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_081892c142a76a3d738370269121d865 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08ea69e4b057de30e54ed3397eb72c91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bb352cf3fb274d6b0a97fc18cc17b46 = $(`<div id="html_3bb352cf3fb274d6b0a97fc18cc17b46" style="width: 100.0%; height: 100.0%;">Cell ID: 97<br>Predicted: Manganese<br>True: Manganese</div>`)[0];
+                popup_08ea69e4b057de30e54ed3397eb72c91.setContent(html_3bb352cf3fb274d6b0a97fc18cc17b46);
+            
+        
+
+        marker_3da225db6a684f951b2d3fd6f31bd96b.bindPopup(popup_08ea69e4b057de30e54ed3397eb72c91)
+        ;
+
+        
+    
+    
+                marker_3da225db6a684f951b2d3fd6f31bd96b.setIcon(icon_081892c142a76a3d738370269121d865);
+            
+    
+            var marker_4e3a329e8fb43c0d2209e0e689484984 = L.marker(
+                [15.198572534701942, 76.45000031370888],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_e2228a7fd04415030f76477efe1d1100 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da821d16f1c634c7f1956ee62a795c9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37ae0e34d37745bfa4ef36c6f07d2c0d = $(`<div id="html_37ae0e34d37745bfa4ef36c6f07d2c0d" style="width: 100.0%; height: 100.0%;">Cell ID: 98<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_da821d16f1c634c7f1956ee62a795c9a.setContent(html_37ae0e34d37745bfa4ef36c6f07d2c0d);
+            
+        
+
+        marker_4e3a329e8fb43c0d2209e0e689484984.bindPopup(popup_da821d16f1c634c7f1956ee62a795c9a)
+        ;
+
+        
+    
+    
+                marker_4e3a329e8fb43c0d2209e0e689484984.setIcon(icon_e2228a7fd04415030f76477efe1d1100);
+            
+    
+            var marker_d9dbf97e82cf4b54953b662407edb966 = L.marker(
+                [13.998572449085332, 76.55000034557297],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_416434f3a1805cae0c357ee6370ab447 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_523e526c159c17c0c68e4ed4be82d360 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e355ba9042eb456b3322395a9d21905c = $(`<div id="html_e355ba9042eb456b3322395a9d21905c" style="width: 100.0%; height: 100.0%;">Cell ID: 107<br>Predicted: Polymetallic<br>True: Polymetallic</div>`)[0];
+                popup_523e526c159c17c0c68e4ed4be82d360.setContent(html_e355ba9042eb456b3322395a9d21905c);
+            
+        
+
+        marker_d9dbf97e82cf4b54953b662407edb966.bindPopup(popup_523e526c159c17c0c68e4ed4be82d360)
+        ;
+
+        
+    
+    
+                marker_d9dbf97e82cf4b54953b662407edb966.setIcon(icon_416434f3a1805cae0c357ee6370ab447);
+            
+    
+            var marker_1a4632f68fc8cfacd415031e39910168 = L.marker(
+                [14.998572521053182, 76.55000033710863],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_6ca077886c6487d12a3ccbb002b2f863 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d2a5cbbe339cd561b5d8f6d2510d492 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cebafee57dccfcee49a40f05c058372d = $(`<div id="html_cebafee57dccfcee49a40f05c058372d" style="width: 100.0%; height: 100.0%;">Cell ID: 117<br>Predicted: Manganese<br>True: Manganese</div>`)[0];
+                popup_7d2a5cbbe339cd561b5d8f6d2510d492.setContent(html_cebafee57dccfcee49a40f05c058372d);
+            
+        
+
+        marker_1a4632f68fc8cfacd415031e39910168.bindPopup(popup_7d2a5cbbe339cd561b5d8f6d2510d492)
+        ;
+
+        
+    
+    
+                marker_1a4632f68fc8cfacd415031e39910168.setIcon(icon_6ca077886c6487d12a3ccbb002b2f863);
+            
+    
+            var marker_267eeafd2c8d32fbd3ef7cc17feaaf61 = L.marker(
+                [15.098572527740178, 76.55000033623304],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_6a952d7001472d8fc621f07ee4acccb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72d3c2a8f1499e15d45557bb5b5ca428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12c82bc14f2e5f9d3e9ca7bca8494d62 = $(`<div id="html_12c82bc14f2e5f9d3e9ca7bca8494d62" style="width: 100.0%; height: 100.0%;">Cell ID: 118<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_72d3c2a8f1499e15d45557bb5b5ca428.setContent(html_12c82bc14f2e5f9d3e9ca7bca8494d62);
+            
+        
+
+        marker_267eeafd2c8d32fbd3ef7cc17feaaf61.bindPopup(popup_72d3c2a8f1499e15d45557bb5b5ca428)
+        ;
+
+        
+    
+    
+                marker_267eeafd2c8d32fbd3ef7cc17feaaf61.setIcon(icon_6a952d7001472d8fc621f07ee4acccb1);
+            
+    
+            var marker_74bf850f3b740a65d64b5945650283be = L.marker(
+                [15.198572534332028, 76.55000033535221],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_f4cf5f667f2cd5519ca4cc9e3dbaf239 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0656c581bbf127bcede4eb8d5b2bc1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4525603fffcbcc1ffad18dda5466643e = $(`<div id="html_4525603fffcbcc1ffad18dda5466643e" style="width: 100.0%; height: 100.0%;">Cell ID: 119<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_a0656c581bbf127bcede4eb8d5b2bc1a.setContent(html_4525603fffcbcc1ffad18dda5466643e);
+            
+        
+
+        marker_74bf850f3b740a65d64b5945650283be.bindPopup(popup_a0656c581bbf127bcede4eb8d5b2bc1a)
+        ;
+
+        
+    
+    
+                marker_74bf850f3b740a65d64b5945650283be.setIcon(icon_f4cf5f667f2cd5519ca4cc9e3dbaf239);
+            
+    
+            var marker_13184e6cb7b7ccc1afc15872e28fa720 = L.marker(
+                [13.798572433256371, 76.65000036961193],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_83de863d573587c34a0f3700f9803a69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbbfed3c7ae57354b6e5fb1b7f3bcf61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3670eb89abecdc9a0047cac83fae3af6 = $(`<div id="html_3670eb89abecdc9a0047cac83fae3af6" style="width: 100.0%; height: 100.0%;">Cell ID: 126<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_dbbfed3c7ae57354b6e5fb1b7f3bcf61.setContent(html_3670eb89abecdc9a0047cac83fae3af6);
+            
+        
+
+        marker_13184e6cb7b7ccc1afc15872e28fa720.bindPopup(popup_dbbfed3c7ae57354b6e5fb1b7f3bcf61)
+        ;
+
+        
+    
+    
+                marker_13184e6cb7b7ccc1afc15872e28fa720.setIcon(icon_83de863d573587c34a0f3700f9803a69);
+            
+    
+            var marker_0b16bc0149e27179a6b4a454f95016c1 = L.marker(
+                [14.998572520664222, 76.65000035886703],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_c1fdd08d0f27aa7155a1ad411473e44a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1ed0192b937a6068d5b15dd4164e790 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09a9ceed0a76afd55a44082a9502d643 = $(`<div id="html_09a9ceed0a76afd55a44082a9502d643" style="width: 100.0%; height: 100.0%;">Cell ID: 138<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_e1ed0192b937a6068d5b15dd4164e790.setContent(html_09a9ceed0a76afd55a44082a9502d643);
+            
+        
+
+        marker_0b16bc0149e27179a6b4a454f95016c1.bindPopup(popup_e1ed0192b937a6068d5b15dd4164e790)
+        ;
+
+        
+    
+    
+                marker_0b16bc0149e27179a6b4a454f95016c1.setIcon(icon_c1fdd08d0f27aa7155a1ad411473e44a);
+            
+    
+            var marker_8c4493b764949f44f95f465e351f7b27 = L.marker(
+                [15.098572527348392, 76.65000035793491],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_a0e798f2570628c8429507028bf66cb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3021a5b89b327dc41ad68fc910e6d563 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0c258e7f4531fc3f98da3fed975c4fb = $(`<div id="html_c0c258e7f4531fc3f98da3fed975c4fb" style="width: 100.0%; height: 100.0%;">Cell ID: 139<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_3021a5b89b327dc41ad68fc910e6d563.setContent(html_c0c258e7f4531fc3f98da3fed975c4fb);
+            
+        
+
+        marker_8c4493b764949f44f95f465e351f7b27.bindPopup(popup_3021a5b89b327dc41ad68fc910e6d563)
+        ;
+
+        
+    
+    
+                marker_8c4493b764949f44f95f465e351f7b27.setIcon(icon_a0e798f2570628c8429507028bf66cb3);
+            
+    
+            var marker_009d288dacc048112228b902143a2c9d = L.marker(
+                [15.198572533937396, 76.6500003569972],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_5660db8d9844463341e385ef7a199c00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f1c090a03d709aee33d3de586b7b5e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a02326229ea02dbb23a447e213faed9 = $(`<div id="html_1a02326229ea02dbb23a447e213faed9" style="width: 100.0%; height: 100.0%;">Cell ID: 140<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_0f1c090a03d709aee33d3de586b7b5e2.setContent(html_1a02326229ea02dbb23a447e213faed9);
+            
+        
+
+        marker_009d288dacc048112228b902143a2c9d.bindPopup(popup_0f1c090a03d709aee33d3de586b7b5e2)
+        ;
+
+        
+    
+    
+                marker_009d288dacc048112228b902143a2c9d.setIcon(icon_5660db8d9844463341e385ef7a199c00);
+            
+    
+            var marker_ad0782b9c8f1e434793aa47700a3d77a = L.marker(
+                [15.298572540430623, 76.6500003560539],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_8650768833c701ba81fdafde95d72112 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fa0963f9308ab3f9e98e265483e37fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50aa01af4edffd37f430587519468b78 = $(`<div id="html_50aa01af4edffd37f430587519468b78" style="width: 100.0%; height: 100.0%;">Cell ID: 141<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_8fa0963f9308ab3f9e98e265483e37fd.setContent(html_50aa01af4edffd37f430587519468b78);
+            
+        
+
+        marker_ad0782b9c8f1e434793aa47700a3d77a.bindPopup(popup_8fa0963f9308ab3f9e98e265483e37fd)
+        ;
+
+        
+    
+    
+                marker_ad0782b9c8f1e434793aa47700a3d77a.setIcon(icon_8650768833c701ba81fdafde95d72112);
+            
+    
+            var marker_06f76670bc301f257e7a06101eba4883 = L.marker(
+                [15.39857254682745, 76.65000035510502],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_f210e8287077279134976d1d25cb6efb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_173bf442c5372d6cefc3435a1f2b7734 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c4ab28d7f29a5ba76c5a9d12d13e234 = $(`<div id="html_2c4ab28d7f29a5ba76c5a9d12d13e234" style="width: 100.0%; height: 100.0%;">Cell ID: 142<br>Predicted: Mica<br>True: Mica</div>`)[0];
+                popup_173bf442c5372d6cefc3435a1f2b7734.setContent(html_2c4ab28d7f29a5ba76c5a9d12d13e234);
+            
+        
+
+        marker_06f76670bc301f257e7a06101eba4883.bindPopup(popup_173bf442c5372d6cefc3435a1f2b7734)
+        ;
+
+        
+    
+    
+                marker_06f76670bc301f257e7a06101eba4883.setIcon(icon_f210e8287077279134976d1d25cb6efb);
+            
+    
+            var marker_32d0ea0e3e9fab415068e5b280606786 = L.marker(
+                [15.79857257143843, 76.65000035125402],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_9a90629b2841e1270b6e3f944fe773ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcc66ee556874593b72f8271b38b39aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b13de2ac79f5f88090c7eff325250bfa = $(`<div id="html_b13de2ac79f5f88090c7eff325250bfa" style="width: 100.0%; height: 100.0%;">Cell ID: 146<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_bcc66ee556874593b72f8271b38b39aa.setContent(html_b13de2ac79f5f88090c7eff325250bfa);
+            
+        
+
+        marker_32d0ea0e3e9fab415068e5b280606786.bindPopup(popup_bcc66ee556874593b72f8271b38b39aa)
+        ;
+
+        
+    
+    
+                marker_32d0ea0e3e9fab415068e5b280606786.setIcon(icon_9a90629b2841e1270b6e3f944fe773ad);
+            
+    
+            var marker_e24db90d3a5f7c85810e278dc0d33c4f = L.marker(
+                [13.798572432878828, 76.75000039202406],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_20656ccac74775d0c69e791e8cf6efd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea1386ab99adb7e2b517a544aa8a20cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e944871139f068720c189bcb41767be = $(`<div id="html_8e944871139f068720c189bcb41767be" style="width: 100.0%; height: 100.0%;">Cell ID: 147<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_ea1386ab99adb7e2b517a544aa8a20cb.setContent(html_8e944871139f068720c189bcb41767be);
+            
+        
+
+        marker_e24db90d3a5f7c85810e278dc0d33c4f.bindPopup(popup_ea1386ab99adb7e2b517a544aa8a20cb)
+        ;
+
+        
+    
+    
+                marker_e24db90d3a5f7c85810e278dc0d33c4f.setIcon(icon_20656ccac74775d0c69e791e8cf6efd9);
+            
+    
+            var marker_afa5cd17d0d8cbc821d0908502c97d53 = L.marker(
+                [15.098572526932063, 76.75000037963854],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_0c3da691217949e388b6394353800ca4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_531e6bf9e72ced75e1ca43a7e501c49a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff3988c9c7c1d46ddca811b23f3f3450 = $(`<div id="html_ff3988c9c7c1d46ddca811b23f3f3450" style="width: 100.0%; height: 100.0%;">Cell ID: 160<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_531e6bf9e72ced75e1ca43a7e501c49a.setContent(html_ff3988c9c7c1d46ddca811b23f3f3450);
+            
+        
+
+        marker_afa5cd17d0d8cbc821d0908502c97d53.bindPopup(popup_531e6bf9e72ced75e1ca43a7e501c49a)
+        ;
+
+        
+    
+    
+                marker_afa5cd17d0d8cbc821d0908502c97d53.setIcon(icon_0c3da691217949e388b6394353800ca4);
+            
+    
+            var marker_7235384b42659f20717d6c6d56f2fc01 = L.marker(
+                [15.19857253351806, 76.75000037864392],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_99acaaabf022bf3de189984002a714e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a566fcea028886b6f6b5f94daed6f55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e617e8c58e4a07f2e1607a23ca341af = $(`<div id="html_5e617e8c58e4a07f2e1607a23ca341af" style="width: 100.0%; height: 100.0%;">Cell ID: 161<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_7a566fcea028886b6f6b5f94daed6f55.setContent(html_5e617e8c58e4a07f2e1607a23ca341af);
+            
+        
+
+        marker_7235384b42659f20717d6c6d56f2fc01.bindPopup(popup_7a566fcea028886b6f6b5f94daed6f55)
+        ;
+
+        
+    
+    
+                marker_7235384b42659f20717d6c6d56f2fc01.setIcon(icon_99acaaabf022bf3de189984002a714e1);
+            
+    
+            var marker_9c3934820137e327888aa74b962e9114 = L.marker(
+                [15.598572558898006, 76.75000037460636],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_6652e0da9566f110d654621ad978f507 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de3ccef99a9f2f75de004b90f848968e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56bf0e16de6a2aec5bb2c92be98ac58a = $(`<div id="html_56bf0e16de6a2aec5bb2c92be98ac58a" style="width: 100.0%; height: 100.0%;">Cell ID: 165<br>Predicted: Talc<br>True: Talc</div>`)[0];
+                popup_de3ccef99a9f2f75de004b90f848968e.setContent(html_56bf0e16de6a2aec5bb2c92be98ac58a);
+            
+        
+
+        marker_9c3934820137e327888aa74b962e9114.bindPopup(popup_de3ccef99a9f2f75de004b90f848968e)
+        ;
+
+        
+    
+    
+                marker_9c3934820137e327888aa74b962e9114.setIcon(icon_6652e0da9566f110d654621ad978f507);
+            
+    
+            var marker_7acc2be37b3474fd36c18a9cf0f6111a = L.marker(
+                [15.698572564998898, 76.75000037358227],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_ba909f180b8f874cdaf4310b8ce06c7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e64f3d5a297d8df6da99197c327703f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99ad6da38095875a3135c0136e2853ca = $(`<div id="html_99ad6da38095875a3135c0136e2853ca" style="width: 100.0%; height: 100.0%;">Cell ID: 166<br>Predicted: Molybdenum<br>True: Molybdenum</div>`)[0];
+                popup_e64f3d5a297d8df6da99197c327703f1.setContent(html_99ad6da38095875a3135c0136e2853ca);
+            
+        
+
+        marker_7acc2be37b3474fd36c18a9cf0f6111a.bindPopup(popup_e64f3d5a297d8df6da99197c327703f1)
+        ;
+
+        
+    
+    
+                marker_7acc2be37b3474fd36c18a9cf0f6111a.setIcon(icon_ba909f180b8f874cdaf4310b8ce06c7c);
+            
+    
+            var marker_1ce404af49c45eb70b952a1b37d6142a = L.marker(
+                [14.798572506174217, 76.85000040446091],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_457c460ada22ab26b762ff54eed32f97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcfc445b6c73bc89764a1b6430326a21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9cc17169f70a5976801f478f49ef216 = $(`<div id="html_b9cc17169f70a5976801f478f49ef216" style="width: 100.0%; height: 100.0%;">Cell ID: 178<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_fcfc445b6c73bc89764a1b6430326a21.setContent(html_b9cc17169f70a5976801f478f49ef216);
+            
+        
+
+        marker_1ce404af49c45eb70b952a1b37d6142a.bindPopup(popup_fcfc445b6c73bc89764a1b6430326a21)
+        ;
+
+        
+    
+    
+                marker_1ce404af49c45eb70b952a1b37d6142a.setIcon(icon_457c460ada22ab26b762ff54eed32f97);
+            
+    
+            var marker_342e54617d8387ad72a9da9d73655a02 = L.marker(
+                [14.998572519813214, 76.85000040238928],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_3e5d628b38c41e5e5f77ca94a09b731d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e89a68a1e221c1619778ec20145c0889 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0815ae3a0f7dab9d29f90c091e111d91 = $(`<div id="html_0815ae3a0f7dab9d29f90c091e111d91" style="width: 100.0%; height: 100.0%;">Cell ID: 180<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_e89a68a1e221c1619778ec20145c0889.setContent(html_0815ae3a0f7dab9d29f90c091e111d91);
+            
+        
+
+        marker_342e54617d8387ad72a9da9d73655a02.bindPopup(popup_e89a68a1e221c1619778ec20145c0889)
+        ;
+
+        
+    
+    
+                marker_342e54617d8387ad72a9da9d73655a02.setIcon(icon_3e5d628b38c41e5e5f77ca94a09b731d);
+            
+    
+            var marker_88d8de20724a75b2959481bb4cf61c0c = L.marker(
+                [15.098572526491187, 76.85000040134405],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_2337cb79b2818bdc8b1449d8c2e65959 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b38ec015a127237cf14f5e68ef099f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3d8b1b90d96d14c8f88a68772ec6b7d = $(`<div id="html_c3d8b1b90d96d14c8f88a68772ec6b7d" style="width: 100.0%; height: 100.0%;">Cell ID: 181<br>Predicted: Iron<br>True: Iron</div>`)[0];
+                popup_2b38ec015a127237cf14f5e68ef099f5.setContent(html_c3d8b1b90d96d14c8f88a68772ec6b7d);
+            
+        
+
+        marker_88d8de20724a75b2959481bb4cf61c0c.bindPopup(popup_2b38ec015a127237cf14f5e68ef099f5)
+        ;
+
+        
+    
+    
+                marker_88d8de20724a75b2959481bb4cf61c0c.setIcon(icon_2337cb79b2818bdc8b1449d8c2e65959);
+            
+    
+            var marker_8537d9f563af7e191e7952c2de5cefc1 = L.marker(
+                [15.198572532605192, 76.9500004219431],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_6378fcd4375e233b92791e47c1e2d1da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0ae07a0f50df1d13dc3f522db37706b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ee40859efd79c2eb2b4da4680584b99 = $(`<div id="html_2ee40859efd79c2eb2b4da4680584b99" style="width: 100.0%; height: 100.0%;">Cell ID: 203<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_f0ae07a0f50df1d13dc3f522db37706b.setContent(html_2ee40859efd79c2eb2b4da4680584b99);
+            
+        
+
+        marker_8537d9f563af7e191e7952c2de5cefc1.bindPopup(popup_f0ae07a0f50df1d13dc3f522db37706b)
+        ;
+
+        
+    
+    
+                marker_8537d9f563af7e191e7952c2de5cefc1.setIcon(icon_6378fcd4375e233b92791e47c1e2d1da);
+            
+    
+            var marker_45f31a1a1ddfb5298f978ccd06665159 = L.marker(
+                [15.298572539088832, 76.95000042082806],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_34c3b7e0661a24043e49b9010c780a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_075171feccb82bafd11eb579d2b785b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5933aff28fda08bfadcc7d9dd300ee0f = $(`<div id="html_5933aff28fda08bfadcc7d9dd300ee0f" style="width: 100.0%; height: 100.0%;">Cell ID: 204<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_075171feccb82bafd11eb579d2b785b9.setContent(html_5933aff28fda08bfadcc7d9dd300ee0f);
+            
+        
+
+        marker_45f31a1a1ddfb5298f978ccd06665159.bindPopup(popup_075171feccb82bafd11eb579d2b785b9)
+        ;
+
+        
+    
+    
+                marker_45f31a1a1ddfb5298f978ccd06665159.setIcon(icon_34c3b7e0661a24043e49b9010c780a0c);
+            
+    
+            var marker_b195b247e75fd276f8b0364e41602f06 = L.marker(
+                [14.99857251886468, 77.05000044591952],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_d0c93847f907a0e45f7a91d6a628b17c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c67614aeac4b9efd6407a7bc589cf82e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d24156c7488a746697efb347b476261e = $(`<div id="html_d24156c7488a746697efb347b476261e" style="width: 100.0%; height: 100.0%;">Cell ID: 222<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_c67614aeac4b9efd6407a7bc589cf82e.setContent(html_d24156c7488a746697efb347b476261e);
+            
+        
+
+        marker_b195b247e75fd276f8b0364e41602f06.bindPopup(popup_c67614aeac4b9efd6407a7bc589cf82e)
+        ;
+
+        
+    
+    
+                marker_b195b247e75fd276f8b0364e41602f06.setIcon(icon_d0c93847f907a0e45f7a91d6a628b17c);
+            
+    
+            var marker_21f70ef8c63909de3ff38ffa08060e0b = L.marker(
+                [15.59857255745105, 77.05000043886501],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_2865d4c3cc741d084cf00707c7863849 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3f2a8b5e0ae69460f889257cb1056ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88fe033ec7ad782fbd0b3e44876f744e = $(`<div id="html_88fe033ec7ad782fbd0b3e44876f744e" style="width: 100.0%; height: 100.0%;">Cell ID: 228<br>Predicted: Kimberlite<br>True: Kimberlite</div>`)[0];
+                popup_c3f2a8b5e0ae69460f889257cb1056ed.setContent(html_88fe033ec7ad782fbd0b3e44876f744e);
+            
+        
+
+        marker_21f70ef8c63909de3ff38ffa08060e0b.bindPopup(popup_c3f2a8b5e0ae69460f889257cb1056ed)
+        ;
+
+        
+    
+    
+                marker_21f70ef8c63909de3ff38ffa08060e0b.setIcon(icon_2865d4c3cc741d084cf00707c7863849);
+            
+    
+            var marker_a9fe21ae091b1e400c8825db3062c5a3 = L.marker(
+                [13.798572431145933, 77.15000048169391],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_21a32133b05761cfa440b9741438389d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_951eb67656c5fa5fc3a4630857c034a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4cdc9e4de42f70e44b69dd16510ac12 = $(`<div id="html_b4cdc9e4de42f70e44b69dd16510ac12" style="width: 100.0%; height: 100.0%;">Cell ID: 231<br>Predicted: Corundum<br>True: Corundum</div>`)[0];
+                popup_951eb67656c5fa5fc3a4630857c034a0.setContent(html_b4cdc9e4de42f70e44b69dd16510ac12);
+            
+        
+
+        marker_a9fe21ae091b1e400c8825db3062c5a3.bindPopup(popup_951eb67656c5fa5fc3a4630857c034a0)
+        ;
+
+        
+    
+    
+                marker_a9fe21ae091b1e400c8825db3062c5a3.setIcon(icon_21a32133b05761cfa440b9741438389d);
+            
+    
+            var marker_fead915bb265eebc867e158a2d58809d = L.marker(
+                [14.398572476385366, 77.15000047482403],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_ae85cb7cf2db81bcb2a5544f11189c72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24221b23fdc46735a886fb9909be07b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2225963aba1ee39cac2fce75789a350b = $(`<div id="html_2225963aba1ee39cac2fce75789a350b" style="width: 100.0%; height: 100.0%;">Cell ID: 237<br>Predicted: Rare Earth Elements,Rare Metals<br>True: Rare Earth Elements,Rare Metals</div>`)[0];
+                popup_24221b23fdc46735a886fb9909be07b9.setContent(html_2225963aba1ee39cac2fce75789a350b);
+            
+        
+
+        marker_fead915bb265eebc867e158a2d58809d.bindPopup(popup_24221b23fdc46735a886fb9909be07b9)
+        ;
+
+        
+    
+    
+                marker_fead915bb265eebc867e158a2d58809d.setIcon(icon_ae85cb7cf2db81bcb2a5544f11189c72);
+            
+    
+            var marker_2504fa42a9947f1e630ea7c178f92d87 = L.marker(
+                [14.598572490744887, 77.15000047247474],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_768fee265ff9a1f946efec4be2830b05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d18dd9654a2f405ab60a44d9c2597989 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbf0be599ff4a899cfdd9f9eda52cdae = $(`<div id="html_dbf0be599ff4a899cfdd9f9eda52cdae" style="width: 100.0%; height: 100.0%;">Cell ID: 239<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_d18dd9654a2f405ab60a44d9c2597989.setContent(html_dbf0be599ff4a899cfdd9f9eda52cdae);
+            
+        
+
+        marker_2504fa42a9947f1e630ea7c178f92d87.bindPopup(popup_d18dd9654a2f405ab60a44d9c2597989)
+        ;
+
+        
+    
+    
+                marker_2504fa42a9947f1e630ea7c178f92d87.setIcon(icon_768fee265ff9a1f946efec4be2830b05);
+            
+    
+            var marker_caef2af33f7be67fc40148c2d6bb433e = L.marker(
+                [14.398572475873346, 77.25000049692724],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_fcc712d48547df6e53bba27cec6ceae2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32a63285e7ab0f54281c348da43f273c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fea49b65873ea4bfd5209165fb26d86d = $(`<div id="html_fea49b65873ea4bfd5209165fb26d86d" style="width: 100.0%; height: 100.0%;">Cell ID: 258<br>Predicted: Rare Earth Elements,Rare Metals<br>True: Rare Earth Elements,Rare Metals</div>`)[0];
+                popup_32a63285e7ab0f54281c348da43f273c.setContent(html_fea49b65873ea4bfd5209165fb26d86d);
+            
+        
+
+        marker_caef2af33f7be67fc40148c2d6bb433e.bindPopup(popup_32a63285e7ab0f54281c348da43f273c)
+        ;
+
+        
+    
+    
+                marker_caef2af33f7be67fc40148c2d6bb433e.setIcon(icon_fcc712d48547df6e53bba27cec6ceae2);
+            
+    
+            var marker_5b49145bf03e9d5557b1a8aced63e555 = L.marker(
+                [14.498572483094986, 77.25000049570173],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_4cba685473e8c37ed005d27a251aae1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e24c65334d1228c9c22859c5196527d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_212dacfc35c022f8bbac247e3387428f = $(`<div id="html_212dacfc35c022f8bbac247e3387428f" style="width: 100.0%; height: 100.0%;">Cell ID: 259<br>Predicted: Kimberlite<br>True: Kimberlite</div>`)[0];
+                popup_e24c65334d1228c9c22859c5196527d6.setContent(html_212dacfc35c022f8bbac247e3387428f);
+            
+        
+
+        marker_5b49145bf03e9d5557b1a8aced63e555.bindPopup(popup_e24c65334d1228c9c22859c5196527d6)
+        ;
+
+        
+    
+    
+                marker_5b49145bf03e9d5557b1a8aced63e555.setIcon(icon_4cba685473e8c37ed005d27a251aae1c);
+            
+    
+            var marker_653e0149c93f162f8874a7f182292fde = L.marker(
+                [14.998572517818543, 77.25000048945857],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_34352299997e64afb95b83b3170ac77a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec443a57b74d888115ef6fc8455c94e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a967bbac6164807374d2597dc19cad0 = $(`<div id="html_3a967bbac6164807374d2597dc19cad0" style="width: 100.0%; height: 100.0%;">Cell ID: 264<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_ec443a57b74d888115ef6fc8455c94e7.setContent(html_3a967bbac6164807374d2597dc19cad0);
+            
+        
+
+        marker_653e0149c93f162f8874a7f182292fde.bindPopup(popup_ec443a57b74d888115ef6fc8455c94e7)
+        ;
+
+        
+    
+    
+                marker_653e0149c93f162f8874a7f182292fde.setIcon(icon_34352299997e64afb95b83b3170ac77a);
+            
+    
+            var marker_17f7e11fe96a203e8c70602917f03fe2 = L.marker(
+                [14.398572475337959, 77.35000051903299],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_1d740e044b3b871566507f904d3b3e91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae661430aaa323e9b50f3a1145f6ac03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b47efcc490dd8bdfd98a7462d7be773 = $(`<div id="html_8b47efcc490dd8bdfd98a7462d7be773" style="width: 100.0%; height: 100.0%;">Cell ID: 279<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_ae661430aaa323e9b50f3a1145f6ac03.setContent(html_8b47efcc490dd8bdfd98a7462d7be773);
+            
+        
+
+        marker_17f7e11fe96a203e8c70602917f03fe2.bindPopup(popup_ae661430aaa323e9b50f3a1145f6ac03)
+        ;
+
+        
+    
+    
+                marker_17f7e11fe96a203e8c70602917f03fe2.setIcon(icon_1d740e044b3b871566507f904d3b3e91);
+            
+    
+            var marker_b9596d731169f1268a2453c81037bba6 = L.marker(
+                [14.598572489681672, 77.35000051646472],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_7e2044b2c582b57d94ce459ae633f188 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3971422143e42119f52603dff5bad2bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e19aece9aeb65702db16ce8f6e813b5 = $(`<div id="html_4e19aece9aeb65702db16ce8f6e813b5" style="width: 100.0%; height: 100.0%;">Cell ID: 281<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_3971422143e42119f52603dff5bad2bb.setContent(html_4e19aece9aeb65702db16ce8f6e813b5);
+            
+        
+
+        marker_b9596d731169f1268a2453c81037bba6.bindPopup(popup_3971422143e42119f52603dff5bad2bb)
+        ;
+
+        
+    
+    
+                marker_b9596d731169f1268a2453c81037bba6.setIcon(icon_7e2044b2c582b57d94ce459ae633f188);
+            
+    
+            var marker_aec657d82d648381cd2d4dae7c9f7f7a = L.marker(
+                [14.698572496715679, 77.35000051516849],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_3b69e753aaa0a61ec92ed057b36ec51e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dfdd518100076da0a120a882327a071 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15baa0e411b5fc4b0104784edaf9c33d = $(`<div id="html_15baa0e411b5fc4b0104784edaf9c33d" style="width: 100.0%; height: 100.0%;">Cell ID: 282<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_5dfdd518100076da0a120a882327a071.setContent(html_15baa0e411b5fc4b0104784edaf9c33d);
+            
+        
+
+        marker_aec657d82d648381cd2d4dae7c9f7f7a.bindPopup(popup_5dfdd518100076da0a120a882327a071)
+        ;
+
+        
+    
+    
+                marker_aec657d82d648381cd2d4dae7c9f7f7a.setIcon(icon_3b69e753aaa0a61ec92ed057b36ec51e);
+            
+    
+            var marker_15f87652784b50cc77064f7604b48f7d = L.marker(
+                [14.898572510504875, 77.35000051255196],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_2b7465c77e11fcd7bed8703df5961977 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c4402bfe3db1e8351ce4eabf3837294 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de8e5e515c42ae6d469329b3156f19ec = $(`<div id="html_de8e5e515c42ae6d469329b3156f19ec" style="width: 100.0%; height: 100.0%;">Cell ID: 284<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_8c4402bfe3db1e8351ce4eabf3837294.setContent(html_de8e5e515c42ae6d469329b3156f19ec);
+            
+        
+
+        marker_15f87652784b50cc77064f7604b48f7d.bindPopup(popup_8c4402bfe3db1e8351ce4eabf3837294)
+        ;
+
+        
+    
+    
+                marker_15f87652784b50cc77064f7604b48f7d.setIcon(icon_2b7465c77e11fcd7bed8703df5961977);
+            
+    
+            var marker_a1f669bad21d8d34cb186082854f0ffc = L.marker(
+                [14.998572517258845, 77.35000051123167],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_99f342e468cf4fae3f4ca4ea7f5ed9c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_266ab6addd0147f6d2bad3fa82db3a92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4bc2b54c78ae242fbdc5005237cccc5 = $(`<div id="html_e4bc2b54c78ae242fbdc5005237cccc5" style="width: 100.0%; height: 100.0%;">Cell ID: 285<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_266ab6addd0147f6d2bad3fa82db3a92.setContent(html_e4bc2b54c78ae242fbdc5005237cccc5);
+            
+        
+
+        marker_a1f669bad21d8d34cb186082854f0ffc.bindPopup(popup_266ab6addd0147f6d2bad3fa82db3a92)
+        ;
+
+        
+    
+    
+                marker_a1f669bad21d8d34cb186082854f0ffc.setIcon(icon_99f342e468cf4fae3f4ca4ea7f5ed9c5);
+            
+    
+            var marker_cd4182da251c14705672e44e2ea7ebb9 = L.marker(
+                [15.498572549597634, 77.35000050451075],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_2efa6b0e9ab10298ac65ce9f173d61f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06dd6a94ce17055b8b636887d7d6e03e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61587dbcd934dbe21cef0d1f0109b5ba = $(`<div id="html_61587dbcd934dbe21cef0d1f0109b5ba" style="width: 100.0%; height: 100.0%;">Cell ID: 290<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_06dd6a94ce17055b8b636887d7d6e03e.setContent(html_61587dbcd934dbe21cef0d1f0109b5ba);
+            
+        
+
+        marker_cd4182da251c14705672e44e2ea7ebb9.bindPopup(popup_06dd6a94ce17055b8b636887d7d6e03e)
+        ;
+
+        
+    
+    
+                marker_cd4182da251c14705672e44e2ea7ebb9.setIcon(icon_2efa6b0e9ab10298ac65ce9f173d61f7);
+            
+    
+            var marker_1c7a447a0b6d21993845608492ad9451 = L.marker(
+                [15.79857256783384, 77.35000050038322],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_a0dfc90885837166f2f6a8337ae6ef6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2944c049bad1b1c8bfa12bc60f765d6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ec747546ed9da1011db16b1ae7033b4 = $(`<div id="html_7ec747546ed9da1011db16b1ae7033b4" style="width: 100.0%; height: 100.0%;">Cell ID: 293<br>Predicted: Gold,Copper<br>True: Gold,Copper</div>`)[0];
+                popup_2944c049bad1b1c8bfa12bc60f765d6d.setContent(html_7ec747546ed9da1011db16b1ae7033b4);
+            
+        
+
+        marker_1c7a447a0b6d21993845608492ad9451.bindPopup(popup_2944c049bad1b1c8bfa12bc60f765d6d)
+        ;
+
+        
+    
+    
+                marker_1c7a447a0b6d21993845608492ad9451.setIcon(icon_a0dfc90885837166f2f6a8337ae6ef6a);
+            
+    
+            var marker_2bf7dcee4364d1682e534d1b48e56a2e = L.marker(
+                [14.298572467474935, 77.4500005424676],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_2c441022022e1ae45e15aee04ad4a5ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_478529bf2e3924204543f34a07cb87c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_324f4839b628fdeb36e3141b00c95fb5 = $(`<div id="html_324f4839b628fdeb36e3141b00c95fb5" style="width: 100.0%; height: 100.0%;">Cell ID: 299<br>Predicted: Magnesium<br>True: Magnesium</div>`)[0];
+                popup_478529bf2e3924204543f34a07cb87c9.setContent(html_324f4839b628fdeb36e3141b00c95fb5);
+            
+        
+
+        marker_2bf7dcee4364d1682e534d1b48e56a2e.bindPopup(popup_478529bf2e3924204543f34a07cb87c9)
+        ;
+
+        
+    
+    
+                marker_2bf7dcee4364d1682e534d1b48e56a2e.setIcon(icon_2c441022022e1ae45e15aee04ad4a5ba);
+            
+    
+            var marker_f59c02e29a99b33b1ca36c3c0880dcc0 = L.marker(
+                [14.398572474779199, 77.45000054114134],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_8973c999a269aaf239ece832e257c98b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2ec4a0a65fee2b3334e24332909ccd2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_508efee98b6bb7bff2123f23aeb4c127 = $(`<div id="html_508efee98b6bb7bff2123f23aeb4c127" style="width: 100.0%; height: 100.0%;">Cell ID: 300<br>Predicted: Tungsten<br>True: Tungsten</div>`)[0];
+                popup_c2ec4a0a65fee2b3334e24332909ccd2.setContent(html_508efee98b6bb7bff2123f23aeb4c127);
+            
+        
+
+        marker_f59c02e29a99b33b1ca36c3c0880dcc0.bindPopup(popup_c2ec4a0a65fee2b3334e24332909ccd2)
+        ;
+
+        
+    
+    
+                marker_f59c02e29a99b33b1ca36c3c0880dcc0.setIcon(icon_8973c999a269aaf239ece832e257c98b);
+            
+    
+            var marker_779c3ea374d619ce7b094230df7c9177 = L.marker(
+                [14.798572503081292, 77.45000053575214],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_637b0b3fe2b1c7626d10f25046db7066 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf0988ef3e48276a6179da230ce89d00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1fa67fc04d20461ade6728dedcdf864 = $(`<div id="html_a1fa67fc04d20461ade6728dedcdf864" style="width: 100.0%; height: 100.0%;">Cell ID: 304<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_cf0988ef3e48276a6179da230ce89d00.setContent(html_a1fa67fc04d20461ade6728dedcdf864);
+            
+        
+
+        marker_779c3ea374d619ce7b094230df7c9177.bindPopup(popup_cf0988ef3e48276a6179da230ce89d00)
+        ;
+
+        
+    
+    
+                marker_779c3ea374d619ce7b094230df7c9177.setIcon(icon_637b0b3fe2b1c7626d10f25046db7066);
+            
+    
+            var marker_653e8b598781f11e88c117ab4adafd00 = L.marker(
+                [14.898572509924984, 77.45000053438389],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_e36efd65682d22b82db5bd6b0a19a30e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_875bdf5139bf635da1891180ce3369ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49ef06a15d490dbf66625a1894e9f4a6 = $(`<div id="html_49ef06a15d490dbf66625a1894e9f4a6" style="width: 100.0%; height: 100.0%;">Cell ID: 305<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_875bdf5139bf635da1891180ce3369ab.setContent(html_49ef06a15d490dbf66625a1894e9f4a6);
+            
+        
+
+        marker_653e8b598781f11e88c117ab4adafd00.bindPopup(popup_875bdf5139bf635da1891180ce3369ab)
+        ;
+
+        
+    
+    
+                marker_653e8b598781f11e88c117ab4adafd00.setIcon(icon_e36efd65682d22b82db5bd6b0a19a30e);
+            
+    
+            var marker_88aad66f764dd888d65882a9667037de = L.marker(
+                [14.998572516674704, 77.4500005330073],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_be34985d84563dc5e41f04098dda633a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_285a68403745c6165e32871b3fee60ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2402b915f267c73b1ad44fc478b6741c = $(`<div id="html_2402b915f267c73b1ad44fc478b6741c" style="width: 100.0%; height: 100.0%;">Cell ID: 306<br>Predicted: Kimberlite<br>True: Kimberlite</div>`)[0];
+                popup_285a68403745c6165e32871b3fee60ea.setContent(html_2402b915f267c73b1ad44fc478b6741c);
+            
+        
+
+        marker_88aad66f764dd888d65882a9667037de.bindPopup(popup_285a68403745c6165e32871b3fee60ea)
+        ;
+
+        
+    
+    
+                marker_88aad66f764dd888d65882a9667037de.setIcon(icon_be34985d84563dc5e41f04098dda633a);
+            
+    
+            var marker_f75e2ed9135c102c440175bf8411d175 = L.marker(
+                [15.598572555165134, 77.45000052457345],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_bd5efd8b6efeb798a0813eca7fea2e26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f1fa23178593b3c6449e3bb1a53f40d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ea7d008853486c68977bb569be48d0f = $(`<div id="html_2ea7d008853486c68977bb569be48d0f" style="width: 100.0%; height: 100.0%;">Cell ID: 312<br>Predicted: Dimension Stone<br>True: Dimension Stone</div>`)[0];
+                popup_4f1fa23178593b3c6449e3bb1a53f40d.setContent(html_2ea7d008853486c68977bb569be48d0f);
+            
+        
+
+        marker_f75e2ed9135c102c440175bf8411d175.bindPopup(popup_4f1fa23178593b3c6449e3bb1a53f40d)
+        ;
+
+        
+    
+    
+                marker_f75e2ed9135c102c440175bf8411d175.setIcon(icon_bd5efd8b6efeb798a0813eca7fea2e26);
+            
+    
+            var marker_327781123427bff73f50d5971491a349 = L.marker(
+                [14.298572466897175, 77.55000056463292],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_e6dec08a81bb818b419a97f91a375be3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcb9117aa276420466ebf715c4efa1ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_486741bd2f0527f5d001f499ec910540 = $(`<div id="html_486741bd2f0527f5d001f499ec910540" style="width: 100.0%; height: 100.0%;">Cell ID: 320<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_dcb9117aa276420466ebf715c4efa1ad.setContent(html_486741bd2f0527f5d001f499ec910540);
+            
+        
+
+        marker_327781123427bff73f50d5971491a349.bindPopup(popup_dcb9117aa276420466ebf715c4efa1ad)
+        ;
+
+        
+    
+    
+                marker_327781123427bff73f50d5971491a349.setIcon(icon_e6dec08a81bb818b419a97f91a375be3);
+            
+    
+            var marker_b981ac9a7efec3c54267bfe364bf805c = L.marker(
+                [14.39857247419705, 77.5500005632524],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_cb2779cc63af4189b9d78bcf6e66ee89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acea67f906abb8d8337c25694d4fbd8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_137fa9b25469cc230780ce35faa7101d = $(`<div id="html_137fa9b25469cc230780ce35faa7101d" style="width: 100.0%; height: 100.0%;">Cell ID: 321<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_acea67f906abb8d8337c25694d4fbd8c.setContent(html_137fa9b25469cc230780ce35faa7101d);
+            
+        
+
+        marker_b981ac9a7efec3c54267bfe364bf805c.bindPopup(popup_acea67f906abb8d8337c25694d4fbd8c)
+        ;
+
+        
+    
+    
+                marker_b981ac9a7efec3c54267bfe364bf805c.setIcon(icon_cb2779cc63af4189b9d78bcf6e66ee89);
+            
+    
+            var marker_975595c091d30576ec23eef1c1747607 = L.marker(
+                [14.498572481406047, 77.5500005618631],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_1fe2f1a28cc8f6c6acdff437f4f81610 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1cd8199ba09a5d66a039ba3a851e401 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f710b8d2ed1afe94951a22f71d9a0e32 = $(`<div id="html_f710b8d2ed1afe94951a22f71d9a0e32" style="width: 100.0%; height: 100.0%;">Cell ID: 322<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_d1cd8199ba09a5d66a039ba3a851e401.setContent(html_f710b8d2ed1afe94951a22f71d9a0e32);
+            
+        
+
+        marker_975595c091d30576ec23eef1c1747607.bindPopup(popup_d1cd8199ba09a5d66a039ba3a851e401)
+        ;
+
+        
+    
+    
+                marker_975595c091d30576ec23eef1c1747607.setIcon(icon_1fe2f1a28cc8f6c6acdff437f4f81610);
+            
+    
+            var marker_1ad10bf5b370716ba74c1eb964895c61 = L.marker(
+                [14.998572516066114, 77.55000055478557],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_7b69fdc25cac832f35fcbd005acf9598 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd6bb755440a5a9b1771b72c6195f029 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e99999cba9f37234763a88948f679a6b = $(`<div id="html_e99999cba9f37234763a88948f679a6b" style="width: 100.0%; height: 100.0%;">Cell ID: 327<br>Predicted: Asbestos,Chrysotile<br>True: Asbestos,Chrysotile</div>`)[0];
+                popup_fd6bb755440a5a9b1771b72c6195f029.setContent(html_e99999cba9f37234763a88948f679a6b);
+            
+        
+
+        marker_1ad10bf5b370716ba74c1eb964895c61.bindPopup(popup_fd6bb755440a5a9b1771b72c6195f029)
+        ;
+
+        
+    
+    
+                marker_1ad10bf5b370716ba74c1eb964895c61.setIcon(icon_7b69fdc25cac832f35fcbd005acf9598);
+            
+    
+            var marker_8c49f49e66af515278f96f28e2efcf4a = L.marker(
+                [15.198572529272328, 77.55000055189375],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_22d816a290ec4c0015b524ce9f61ed04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3c18daed3eedaa257dd3598ee18bbae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c8d10a39344d90249d6b534e9251086 = $(`<div id="html_3c8d10a39344d90249d6b534e9251086" style="width: 100.0%; height: 100.0%;">Cell ID: 329<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_d3c18daed3eedaa257dd3598ee18bbae.setContent(html_3c8d10a39344d90249d6b534e9251086);
+            
+        
+
+        marker_8c49f49e66af515278f96f28e2efcf4a.bindPopup(popup_d3c18daed3eedaa257dd3598ee18bbae)
+        ;
+
+        
+    
+    
+                marker_8c49f49e66af515278f96f28e2efcf4a.setIcon(icon_22d816a290ec4c0015b524ce9f61ed04);
+            
+    
+            var marker_b75dcba4bc0d2e077f07f42de9037bd8 = L.marker(
+                [15.298572535732006, 77.55000055043489],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_0c00738bbfe073463af68ca3d5d66aaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c90971bf433a2524c2b9d2789eff97e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a969ede74740fc3d983282c8abf8e6f = $(`<div id="html_9a969ede74740fc3d983282c8abf8e6f" style="width: 100.0%; height: 100.0%;">Cell ID: 330<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_5c90971bf433a2524c2b9d2789eff97e.setContent(html_9a969ede74740fc3d983282c8abf8e6f);
+            
+        
+
+        marker_b75dcba4bc0d2e077f07f42de9037bd8.bindPopup(popup_5c90971bf433a2524c2b9d2789eff97e)
+        ;
+
+        
+    
+    
+                marker_b75dcba4bc0d2e077f07f42de9037bd8.setIcon(icon_0c00738bbfe073463af68ca3d5d66aaa);
+            
+    
+            var marker_06cb6edd106a5621d97ac7cb0716148b = L.marker(
+                [15.798572566571364, 77.55000054301168],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_73b88eeefcc59d2488ece0bd3e6ae29c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa6370ce88d797a2ca0449a18500b376 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55feb4c0771d058f07d62c3e56a3bed0 = $(`<div id="html_55feb4c0771d058f07d62c3e56a3bed0" style="width: 100.0%; height: 100.0%;">Cell ID: 335<br>Predicted: Gold,Diamond<br>True: Gold,Diamond</div>`)[0];
+                popup_aa6370ce88d797a2ca0449a18500b376.setContent(html_55feb4c0771d058f07d62c3e56a3bed0);
+            
+        
+
+        marker_06cb6edd106a5621d97ac7cb0716148b.bindPopup(popup_aa6370ce88d797a2ca0449a18500b376)
+        ;
+
+        
+    
+    
+                marker_06cb6edd106a5621d97ac7cb0716148b.setIcon(icon_73b88eeefcc59d2488ece0bd3e6ae29c);
+            
+    
+            var marker_0874c9e6deb9f5a0314aa155828ebc97 = L.marker(
+                [14.398572473591503, 77.65000058536633],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_921b82dadfd3950fbdc12c80e6a8a9a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9cbd3466e9059a0affdf49fd27d02a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a33cf5542cf984f09e7032199907c4e = $(`<div id="html_6a33cf5542cf984f09e7032199907c4e" style="width: 100.0%; height: 100.0%;">Cell ID: 342<br>Predicted: Gold<br>True: Gold</div>`)[0];
+                popup_e9cbd3466e9059a0affdf49fd27d02a2.setContent(html_6a33cf5542cf984f09e7032199907c4e);
+            
+        
+
+        marker_0874c9e6deb9f5a0314aa155828ebc97.bindPopup(popup_e9cbd3466e9059a0affdf49fd27d02a2)
+        ;
+
+        
+    
+    
+                marker_0874c9e6deb9f5a0314aa155828ebc97.setIcon(icon_921b82dadfd3950fbdc12c80e6a8a9a0);
+            
+    
+            var marker_f443d1fa7464323b7077c0d7b0ff23a9 = L.marker(
+                [14.49857248079593, 77.6500005839224],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_6411902b3dc57b6ed3c038d11f539659 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f9a890a138186a5e3385bc1eece4b16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_515798ba814dd908c4b31cef32f4ed3c = $(`<div id="html_515798ba814dd908c4b31cef32f4ed3c" style="width: 100.0%; height: 100.0%;">Cell ID: 343<br>Predicted: Copper<br>True: Copper</div>`)[0];
+                popup_2f9a890a138186a5e3385bc1eece4b16.setContent(html_515798ba814dd908c4b31cef32f4ed3c);
+            
+        
+
+        marker_f443d1fa7464323b7077c0d7b0ff23a9.bindPopup(popup_2f9a890a138186a5e3385bc1eece4b16)
+        ;
+
+        
+    
+    
+                marker_f443d1fa7464323b7077c0d7b0ff23a9.setIcon(icon_6411902b3dc57b6ed3c038d11f539659);
+            
+    
+            var marker_3f92b0a98d2acd4d61617e9059ff4c86 = L.marker(
+                [15.298572535085107, 77.65000057204483],
+                {
+}
+            ).addTo(marker_cluster_c2ceb85113052080519c210845fa8e20);
+        
+    
+            var icon_0db5a2b5a2716da4d1e1b9f9ac893070 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67c4afab33e69df1d22551a223b5a98d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_312b777b68ab71e9f26bc494c51d6481 = $(`<div id="html_312b777b68ab71e9f26bc494c51d6481" style="width: 100.0%; height: 100.0%;">Cell ID: 351<br>Predicted: Diamond<br>True: Diamond</div>`)[0];
+                popup_67c4afab33e69df1d22551a223b5a98d.setContent(html_312b777b68ab71e9f26bc494c51d6481);
+            
+        
+
+        marker_3f92b0a98d2acd4d61617e9059ff4c86.bindPopup(popup_67c4afab33e69df1d22551a223b5a98d)
+        ;
+
+        
+    
+    
+                marker_3f92b0a98d2acd4d61617e9059ff4c86.setIcon(icon_0db5a2b5a2716da4d1e1b9f9ac893070);
+            
+    
+            marker_cluster_c2ceb85113052080519c210845fa8e20.addTo(map_8ea20af0618bb586141cb0ff9ef8ce62);
+        
+</script>
+</html>
